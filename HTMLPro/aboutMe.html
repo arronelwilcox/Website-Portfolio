@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+	
+      Final Project
+      CIS 1140
+      Author: Arron Wilcox
+      Date:   11-25-2019
+
+      Filename:   aboutMe.html
+
+   -->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="aboutMe.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+
+    <title>Arron Wilcox</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        Portfolio of Arron Wilcox
+      </h1>
+    </header>
+    <div id="menubar">
+      <ul>
+        <li><a class="active" href="aboutMe.html">Home</a></li>
+        <li><a class="active" href="Interests.html">Interest</a></li>
+        <li><a class="active" href="programs.html">Programs</a></li>
+        <li><a class="active" href="resume.html">Resume</a></li>
+        <li><a class="active" href="Goals.html">Goals</a></li>
+      </ul>
+    </div>
+  
+    <script>
+      function greet() {
+        // Getting name using id of the text box
+        name = document.getElementById("name").value;
+        // Assigning the greeting to greeting id paragraph in the HTML
+        document.getElementById("greeting").innerHTML =
+          "Hello " +
+          name +
+          "! Welcome to my Webpage!!" +
+          "\n Below is a Pic of my Family!!!";
+      }
+    </script>
+
+    <center>
+      <h1>Welcome</h1>
+      <p>Please enter your name and click enter!</p>
+      <input type="text" name="name" id="name" /><br /><br />
+      <input type="button" onclick="greet()" value="Click" /><br />
+      <p id="greeting"></p>
+      <br />
+      <h2><em>About Me</em></h2>
+      <div class="container">
+        <aside class="Pic">
+          <img
+            src="IMG_3524.png"
+            width="300"
+            height="200"
+            class="couple"
+          />
+        </aside>
+        <!-- <aside style="position: relative"></aside> -->
+      <p>
+        I was born in Galveston Texas, yet I was raised in Ohio.I grew up in a
+        small town called Hillsboro. My current occupation is a surgical services
+        technician for Adena Health Systems. However, i am in transioning into Software Engineering.
+      </p>
+      <h3><em>Hobbies</em></h3>
+      <p>
+        I enjoy doing many different out door activities such as , Hiking,
+        Kyaking, fishing, boating, tubing, and camping. I am also very
+        competitive so I like to participate in any game with friends. Yet,I
+        spend most of my spare time with my family. I have recently got into
+        programming, so I do spend alot of time making programs to satisfy my
+        creative urges. I find alot of joy in creating programs and after three 
+        degrees I feel much more confident about my skills as a software engineer.
+        I have an Associates of Arts & Science from Souther State Community College.
+        An Applied Associates in Computer Information Systems and Software Development
+        from Sinclair Community College. A Bachelors of Scienece in Software Development from
+        Western Governors University, along with many certifications.
+      </p>
+    </div>
+    </center>
+
+    <footer>
+      <center>
+        <a href = "https://www.linkedin.com/in/arron-wilcox-ab4108182"><img class="linked" src="tagging-on-linkedin.png"></a>
+      </center>
+    </footer>
+  </body>
+</html>
